@@ -1,2 +1,2 @@
-# -GB_LINEAR_ALGEBRA
+# GB_LINEAR_ALGEBRA
 Линейная алгебра
