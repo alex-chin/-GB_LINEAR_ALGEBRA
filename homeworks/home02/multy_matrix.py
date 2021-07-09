@@ -8,6 +8,8 @@ def matrix_multi(A, B):
     A_n = len(A[0])
     B_n = len(B)
     B_k = len(B[0])
+    if A_n != B_n:
+        raise Exception("Размеры матриц не согласованы")
     C = [[[] for i in range(A_m)] for i in range(B_k)]
 
     for i in range(A_m):
@@ -27,3 +29,7 @@ A = [[1, -2], [3, 0]]
 B = [[4, -1], [0, 5]]
 print(matrix_multi(A, B))
 print(matrix_multi(B, A))
+
+A = [[1, 2, 3, 4], [1, 2, 3, 4]]
+B = [[2, 1], [3, 1], [1, 1]]
+print(matrix_multi(A, B))
